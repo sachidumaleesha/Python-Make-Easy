@@ -3,13 +3,14 @@ import streamlit as st
 def show_ifelse():
     st.header("If Else Statements")
     option = st.selectbox(
-    'Select the example you want to see',
-    ('Example-01', 'Example-02', 'Example-03', 'Example-04'))
+        'Select the example you want to see',
+        ('Example 01', 'Example 02', 'Example 03', 'Example 04')
+    )
    
-    if option == 'Example-01':
+    if option == 'Example 01':
         st.code('''
             # —---------------------
-            #   EXAMPLE 3
+            #   EXAMPLE 1
             # —---------------------
             name = input("Enter your name: ")
 
@@ -17,14 +18,14 @@ def show_ifelse():
             print("You did not enter your name!")
             else:
             print(f"Hello {name}")
-                ''')
-    elif option == 'Example-02':
+        ''')
+    elif option == 'Example 02':
         st.code('''
             # if = Do some code IF condition is True
             # else = Do something else if above condition/s are False
 
             # —---------------------
-            #   EXAMPLE 1
+            #   EXAMPLE 2
             # —---------------------
             age = int(input("Enter your age: "))
 
@@ -36,11 +37,11 @@ def show_ifelse():
                 print("You haven't been born yet")
             else:
                 print("You must be 18+ sign up")
-            ''')
-    elif option == 'Example-03':
+        ''')
+    elif option == 'Example 03':
         st.code('''
             # —---------------------
-            #   EXAMPLE 2
+            #   EXAMPLE 3
             # —---------------------
             response = input("Do you want food (Y/N)?: ")
 
@@ -48,8 +49,8 @@ def show_ifelse():
                 print("Have some food")
             else:
                 print("No food for you!")
-            ''')
-    elif option == 'Example-04':
+        ''')
+    elif option == 'Example 04':
         st.code('''
             # —---------------------
             #   EXAMPLE 4
@@ -60,4 +61,4 @@ def show_ifelse():
                 print("You are online")
             else:
                 print("You are offline")
-            ''')
+        ''')
